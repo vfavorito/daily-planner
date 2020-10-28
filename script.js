@@ -16,13 +16,13 @@ let txtBox = $(".textBox");
 // Checks to see if a timeblock is past present or future and sets background color of textbox
 txtBox.each(function () {
     if (time === parseInt($(this).attr("title"))) {
-        $(this).attr("style", "background-color: red")
+        $(this).attr("style", "background-color: yellow")
     }
     else if(time > parseInt($(this).attr("title"))){
         $(this).attr("style", "background-color: lightgray")
     }
     else if(time < parseInt($(this).attr("title"))){
-        $(this).attr("style", "background-color: green")
+        $(this).attr("style", "background-color: lime")
     }
 })
 // event listener for the save buttons and sets text in local storage 
