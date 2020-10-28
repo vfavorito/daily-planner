@@ -11,18 +11,18 @@ $("#txtBox15").val(localStorage.getItem(15));
 $("#txtBox16").val(localStorage.getItem(16));
 $("#txtBox17").val(localStorage.getItem(17));
 // time pulls the hour of the day it is in military time
-let time = moment().format('H');
+let time = parseInt(moment().format('H'));
 let txtBox = $(".textBox");
-// Checks to see if a timeblock is past present or future and sets background color of textbox
+// Checks to see if a timeblock is past present or future and adds that class to the timeblock
 txtBox.each(function () {
     if (time === parseInt($(this).attr("title"))) {
-        $(this).attr("style", "background-color: yellow")
+        $(this).addClass("present");
     }
     else if(time > parseInt($(this).attr("title"))){
-        $(this).attr("style", "background-color: lightgray")
+        $(this).addClass("past");
     }
     else if(time < parseInt($(this).attr("title"))){
-        $(this).attr("style", "background-color: lime")
+        $(this).addClass("future");
     }
 })
 // event listener for the save buttons and sets text in local storage 
