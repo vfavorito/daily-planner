@@ -15,7 +15,7 @@ In this repository I created a Work Day Planner.  The planner has hourly time bl
 ![SaveButton](images/saveBtn.png)
 
 ### Example
-Here is a link to the Quiz:  [https://vfavorito.github.io/daily-planner/](https://vfavorito.github.io/daily-planner/)
+Here is a link to the Planner:  [https://vfavorito.github.io/daily-planner/](https://vfavorito.github.io/daily-planner/)
 
 ### Installation
 To install this project simply clone this repository to your local directory and access it using Visual Studio Code
